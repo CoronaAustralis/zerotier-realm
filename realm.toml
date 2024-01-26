@@ -1,0 +1,8 @@
+[network]
+no_tcp = false
+use_udp = true
+
+[[endpoints]]
+listen = "0.0.0.0:4000"
+remote = "1.1.1.1:443"
+

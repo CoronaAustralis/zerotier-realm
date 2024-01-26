@@ -1,0 +1,13 @@
+version: '3'
+services:
+  realm-zerotier: 
+    image: realm-zerotier
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
+    volumes:
+      - ./zerotier-one:/var/lib/zerotier-one
+      - ./realm.toml:/realm.toml
+    command:
+      - xxxxxxxxxx
